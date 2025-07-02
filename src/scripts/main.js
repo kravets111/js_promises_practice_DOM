@@ -6,7 +6,7 @@ const notification = (message, isError = false) => {
   const divElement = document.createElement('div');
 
   divElement.setAttribute('data-qa', 'notification');
-  divElement.className = isError ? 'success' : 'error';
+  divElement.className = isError ? 'error' : 'success';
   divElement.textContent = message;
 
   document.body.appendChild(divElement);
